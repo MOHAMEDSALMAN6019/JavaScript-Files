@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menubar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            background-color: lightblue;
+        }
+
+        menu ul {
+            display: flex;
+
+        }
+
+        ul li {
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        .img {
+            background-image: url("all-Indian-cricketer-name.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .content {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .Ind{
+            color: greenyellow
+        }
+          
+        h2{
+            color: blue
+        }
+
+        .ms {
+            border: 2px solid black;
+            height: 250px;
+            width: 300px;
+            margin-left: 50px;
+            margin-top: 40px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            transition: 3s;
+        }
+
+        .cric {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background: dimgrey;
+            font-size: 20px;
+            padding: 15px 40px;
+            color: white;
+            border-radius: 50px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contain {
+            display: none;
+        }
+
+        .ms:hover .contain {
+            display: block;
+
+        }
+
+        .ms:hover img {
+            display: none;
+        }
+        
+        p{
+            color:darkred
+        }
+
+        center{
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menubar">
+        <logo>
+            <h1> Stars </h1>
+        </logo>
+        <menu>
+            <ul type="none">
+                <li> Home </li>
+                <li> About </li>
+                <li> Contact </li>
+            </ul>
+        </menu>
+    </div>
+    <div class="img">
+        <div class="content">
+            <h1 class="Ind"> Indian Cricketer </h1>
+            <button onclick="cr()"> Live match </button>
+        </div>
+    </div><br>
+    <div class="cric">
+        <span class="ms">
+            <img src="rohit sharma.jpeg" alt="">
+            <div class="contain">
+                <h2> Rohit </h2>
+                <p> Rohit Gurunath Sharma is an Indian international cricketer and the current
+                    captain of India men’s cricket team in all formats. Considered one of the best batsmen of his
+                    generation and one of greatest opening batters of all time.</p>
+            </div>
+        </span>
+        <span class="ms">
+            <img src="Dhoni.jpeg" alt="">
+            <div class="contain">
+                <h2> Dhoni</h2>
+                <p>Dhoni is a right-handed batsman and wicket-keeper. Dhoni is an unorthodox batsman. He deviates from
+                    conventional coaching manuals and showcases his unique batting technique.He has a world record for
+                    the highest number of stumpings by any wicket-keeper. </p>
+            </div>
+        </span>
+        <span class="ms">
+            <img src="Virat Kohli.jpeg" alt="">
+            <div class="contain">
+                <h2> Virat </h2>
+                <p>Kohli is considered as an enterprising batsman, possessing technical abilities and a dynamic playing
+                    demeanour.His customarily batting position in ODl cricket is at number three, with a
+                    slightly open-chested stance, and a resolute grip on the bottom handle of his bat.</p>
+        </span><br>
+    </div>
+    </div><br><br>
+    <div class="btn">
+        <button>More </button>
+    </div>
+
+    <script>
+        function cr() {
+            open("https://www.cricbuzz.com/")
+        }
+    </script>
+
+    <p id="mds"> <center> @ Design by Mohamed Salman </center>  </p>
+
+</body>
+
+</html>
